@@ -6,9 +6,10 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './home/home.component';
 import { MaterialModule } from 'src/material.module';
+import { ContactDialogComponent } from './components/contact-dialog/contact-dialog.component';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent],
+  declarations: [AppComponent, HomeComponent, ContactDialogComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -17,5 +18,6 @@ import { MaterialModule } from 'src/material.module';
   ],
   providers: [],
   bootstrap: [AppComponent],
+  exports: [ContactDialogComponent],
 })
 export class AppModule {}
