@@ -14,12 +14,10 @@ export class ContactDialogComponent implements OnInit {
     },
     [Validators.required]
   );
+
   constructor(private fb: FormBuilder) {}
 
   ngOnInit(): void {}
 
-  public onContact() {
-    console.log(this.formControl.value);
-    this.formControl.valid;
-  }
+  public onContact = () => console.log(this.formControl.value);
 }
